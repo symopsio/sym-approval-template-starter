@@ -1,4 +1,4 @@
-Sym Approval Flow Starter
+Sym Approval Template Starter
 ==================
 
 Example project demonstrating how [Sym Implementers](https://docs.symops.com/docs/deploy-sym-platform) use the [Sym SDK](https://docs.symops.com/docs) to create [Sym Flows](https://docs.symops.com/docs/flows) that use the [Sym Approval](https://docs.symops.com/docs/sym-approval) Template.
