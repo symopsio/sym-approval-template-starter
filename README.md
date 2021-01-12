@@ -15,7 +15,7 @@ Once you've created a repository from the template, you'll want to `git clone` y
 
 #### Symflow CLI
 
-Install The Symflow CLI to authenticate with the Sym Platform:
+Install the Symflow CLI to authenticate with the Sym Platform:
 
 1. [Install](https://docs.symops.com/docs/install-sym-flow)
 2. [Log In](https://docs.symops.com/docs/login-sym-flow)
