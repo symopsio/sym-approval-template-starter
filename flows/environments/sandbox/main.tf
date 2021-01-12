@@ -6,7 +6,7 @@ locals {
   environment = "sandbox"
 }
 
-module "access_flow" {
-  source      = "../../modules/access-flow"
+module "approval_flow" {
+  source      = "../../modules/approval-flow"
   environment = local.environment
 }

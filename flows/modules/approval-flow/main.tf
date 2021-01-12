@@ -8,8 +8,8 @@ data "sym_integration" "slack" {
 }
 
 resource "sym_flow" "this" {
-  name  = "access_flow_${var.environment}"
-  label = "Starter Access Flow (${title(var.environment)})"
+  name  = "approval_flow_${var.environment}"
+  label = "Starter Approval Flow (${title(var.environment)})"
 
   template = "sym:approval:1.0"
 
