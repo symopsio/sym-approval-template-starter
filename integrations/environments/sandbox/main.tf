@@ -12,8 +12,8 @@ locals {
 
 # Creates an AWS IAM Role that a Sym runtime can use for execution
 module "runtime_connector" {
-  source  = "terraform.symops.com/symops/runtime-connector/aws"
-  version = "1.0.0"
+  source  = "terraform.symops.com/symopsio/runtime-connector/sym"
+  version = ">= 1.1.0"
 
   environment = local.environment
 
