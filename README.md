@@ -5,7 +5,6 @@ Example project demonstrating how [Sym Implementers](https://docs.symops.com/doc
 
 You can also see a video walkthrough of this setup [here](https://docs.symops.com/docs/integrator-demo).
 
-
 ### Get started
 
 This repo is a [GitHub Template Repository](https://help.github.com/en/articles/creating-a-repository-from-a-template). You can create a private copy by using the "Use this Template" link in the repo:
@@ -25,7 +24,7 @@ Install the Symflow CLI to authenticate with the Sym Platform:
 
 ### Integrations & Flows
 
-This repo lets you easily manage Terraform configurations for both Sym resources and for the integration dependencies that Sym resources need in order to work.
+This starter repo lets you easily manage Terraform configurations for both Sym resources and for the integration dependencies that Sym resources need in order to work. It makes heavy use of the [Sym Terraform Modules](https://docs.symops.com/docs/terraform-modules).
 
 The [`integrations`](integrations) folder is where you provision things like AWS IAM Roles and secrets that run in your infrastructure. The integrations folder also contains the Sym resources that reference these infrastructure dependencies.
 
