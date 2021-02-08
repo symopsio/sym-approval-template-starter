@@ -3,6 +3,9 @@ Sym Approval Template Starter
 
 Example project demonstrating how [Sym Implementers](https://docs.symops.com/docs/deploy-sym-platform) use the [Sym SDK](https://docs.symops.com/docs) to create [Sym Flows](https://docs.symops.com/docs/flows) that use the [Sym Approval](https://docs.symops.com/docs/sym-approval) Template.
 
+You can also see a video walkthrough of this setup [here](https://docs.symops.com/docs/integrator-demo).
+
+
 ### Get started
 
 This repo is a [GitHub Template Repository](https://help.github.com/en/articles/creating-a-repository-from-a-template). You can create a private copy by using the "Use this Template" link in the repo:
@@ -22,7 +25,7 @@ Install the Symflow CLI to authenticate with the Sym Platform:
 
 ### Integrations & Flows
 
-This starter repo lets you easily manage Terraform configurations for both Sym resources and for the integration dependencies that Sym resources need in order to work.
+This repo lets you easily manage Terraform configurations for both Sym resources and for the integration dependencies that Sym resources need in order to work.
 
 The [`integrations`](integrations) folder is where you provision things like AWS IAM Roles and secrets that run in your infrastructure. The integrations folder also contains the Sym resources that reference these infrastructure dependencies.
 
@@ -30,4 +33,4 @@ The [`flows`](flows) folder contains that actual definition of a Sym Approval Fl
 
 #### Environments
 
-Both the `integrations` and `flows` folders contain two starter environments: `prod` and `sandbox`. These environments solve the problem of how you can update and test your flows once you've already got users working with them. When you're just starting out, the prod and sandbox flows will typically look very similar.
+The `integrations` and `flows` folders contain a `sandbox` environment. Once you've finished validation in sandbox, you can create the prod environment. Multiple environments solve the problem of how you can update and test your flows once you've already got users working with them.

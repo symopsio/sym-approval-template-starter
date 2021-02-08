@@ -3,8 +3,7 @@ terraform {
   required_providers {
     sym = {
       source  = "terraform.symops.com/symopsio/sym"
-      version = ">= 0.1.9, < 2.0.0"
+      version = ">= 0.1.14, < 2.0.0"
     }
   }
 }
-

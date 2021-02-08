@@ -1,5 +1,6 @@
 variable "environment" {
   description = "Environment for these integrations"
+  type        = string
 }
 
 variable "runtime_settings" {

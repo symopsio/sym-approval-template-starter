@@ -11,7 +11,7 @@ resource "sym_flow" "this" {
   name  = "approval_flow_${var.environment}"
   label = "Starter Approval Flow (${title(var.environment)})"
 
-  template = "sym:approval:1.0"
+  template = "sym:template:approval:1.0"
 
   implementation = "${path.module}/impl.py"
 
@@ -20,5 +20,3 @@ resource "sym_flow" "this" {
     slack_id   = data.sym_integration.slack.id
   }
 }
-
-// Implement impl.py, add a strategy and targets to finish your flow implementation!
