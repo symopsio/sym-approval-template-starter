@@ -2,11 +2,10 @@ provider "sym" {
   org = var.sym_org_slug
 }
 
-locals {
-  environment = "sandbox"
-}
-
 module "approval_flow" {
-  source      = "../../modules/approval-flow"
-  environment = local.environment
+  count = var.sym_enabled == true ? 1 : 0
+
+  source = "../../modules/approval-flow"
+
+  environment = var.environment
 }

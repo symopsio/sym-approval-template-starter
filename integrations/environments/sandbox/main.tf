@@ -6,24 +6,21 @@ provider "sym" {
   org = var.sym_org_slug
 }
 
-locals {
-  environment = "sandbox"
-}
-
 # Creates an AWS IAM Role that a Sym runtime can use for execution
 module "runtime_connector" {
   source  = "terraform.symops.com/symopsio/runtime-connector/sym"
   version = ">= 1.1.0"
 
-  environment = local.environment
-
   account_id_safelist = var.account_id_safelist
+  addons              = ["aws/secretsmgr"]
+  environment         = var.environment
 }
 
 # Defines Sym integrations
-module "runtime" {
-  source = "../../modules/runtime"
+module "sym" {
+  count  = var.sym_enabled == true ? 1 : 0
+  source = "../../modules/sym"
 
-  environment      = local.environment
+  environment      = var.environment
   runtime_settings = module.runtime_connector.settings
 }
